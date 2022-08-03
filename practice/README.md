@@ -9,6 +9,8 @@
 
 
 ### 1. Python-9
+:arrow_right:[к модулю](https://github.com/AndreiDS63/sf_data_science/tree/main/practice/Python-9)
+
 Модуль Collections: Counter, defaultdict, deque и OrderedDict  
 Массивы различных типов из библиотеки NumPy  
 Преимущества массивов перед списками  
