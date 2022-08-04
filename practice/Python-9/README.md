@@ -1,7 +1,7 @@
 # 1. Python-9
 
 ## Оглавление 
-[Модуль Collections. Counter и defaultdict](#модуль-collections-counter-и-defaultdict)
+[Модуль Collections. Counter и defaultdict](#модуль-collections-counter-и-defaultdict)  
     [Counter](#counter)
 
 ### Модуль Collections. Counter и defaultdict
