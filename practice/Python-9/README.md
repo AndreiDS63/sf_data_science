@@ -27,9 +27,9 @@
 * from collections import defaultdict  
 * groups = defaultdict(list) - в скобках передается указатель на класс объекта  
     
-<code>for student, group in students:</code>  
-    <code>groups[group].append(student)</code>  
-<code>print(groups)</code>  
+<code>for student, group in students:  
+    groups[group].append(student)
+print(groups)</code>  
     
 
 * print(groups[3]) - обращение по ключу  
