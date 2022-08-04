@@ -2,12 +2,12 @@
 
 ## Оглавление 
 [Модуль Collections. Counter и defaultdict](#модуль-collections-counter-и-defaultdict)
-[Counter]()
+    [Counter](#counter)
 
 ### Модуль Collections. Counter и defaultdict
 В этом юните вы узнаете, как подсчитывать элементы в списке с помощью объекта Counter и создавать словарь с заданным по умолчанию объектом для упрощения написания кода.  
 
-####COUNTER
+#### COUNTER
 Предназначен для решения часто возникающей задачи по подсчёту различных элементов  
 `from collections import Counter`  
 `c = Counter(lst)`  
