@@ -27,13 +27,13 @@
 * from collections import defaultdict  
 * groups = defaultdict(list) - в скобках передается указатель на класс объекта  
     
-    for student, group in students:
+    <code>for student, group in students:
         groups[group].append(student)
  
-    print(groups)
+    print(groups)</code>
 
 * print(groups[3]) - обращение по ключу  
 * обращение по несуществующему ключу возвращает пустой элемент, и в словаре создастся элемент с этим ключом с пустым значением  
-   
+
 
 :arrow_up:[к оглавлению](#оглавление)
