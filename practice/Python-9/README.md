@@ -15,6 +15,17 @@
 :----:|:------:|:----------:
 1     |`from collections import Counter`|
 2     |`c = Counter(lst)`|узнать сколько раз встретился конкретный элемент
+3     |`sum(c.values())`|узнать сумму всех значений
+4     |`Counter(lst1) + Counter(lst2)`| 
+5     |`Counter(lst1).substract(Counter(lst2))`| 
+6     |`print(*Counter(lst1).elements())`|список всех элементов
+7     |`print(list(Counter(lst1)))`|список уникальных элементов 
+8     |`print(dict(Counter(lst1)))`|превратить Counter в обычный словарь
+9     |`print(Counter(lst).most_common())`|список кортежей
+10     |`print(Counter(lst).most_common(2))`|список из 2х кортежей
+11     |`Counter(lst).clear()`|обнулить счетчик
+
+
 
 `from collections import Counter`  
 `c = Counter(lst)`  
