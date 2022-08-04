@@ -28,7 +28,7 @@
 * groups = defaultdict(list) - в скобках передается указатель на класс объекта  
     
 <code>for student, group in students:</code>  
-<code>    groups[group].append(student)</code>  
+    <code>groups[group].append(student)</code>  
 <code>print(groups)</code>  
     
 
