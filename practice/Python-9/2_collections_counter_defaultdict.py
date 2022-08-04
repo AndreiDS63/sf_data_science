@@ -51,3 +51,10 @@ counter_spb = Counter(cars_spb)
  
 print(counter_moscow - counter_spb)
 # Counter({'black': 2, 'yellow': 1})
+
+print(*counter_moscow.elements())
+print(list(counter_moscow))
+print(dict(counter_moscow))
+print(counter_moscow.most_common())
+counter_moscow.clear()
+print(counter_moscow)
