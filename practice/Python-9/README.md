@@ -1,8 +1,9 @@
 # 1. Python-9
 
 ## Оглавление 
-* [Модуль Collections. Counter и defaultdict](#модуль-collections-counter-и-defaultdict)  
+* [Модуль Collections](#модуль-collections-counter-и-defaultdict)  
     + [Counter](#counter)
+    + [Defaultdict](#defaultdict)
 
 ### Модуль Collections. Counter и defaultdict
 В этом юните вы узнаете, как подсчитывать элементы в списке с помощью объекта Counter и создавать словарь с заданным по умолчанию объектом для упрощения написания кода.  
@@ -22,7 +23,7 @@
 `print(Counter(lst).most_common(2))` - список из 2х кортежей  
 `Counter(lst).clear()` - обнулить счетчик  
 
-**DEFAULTDICT**  
+#### DEFAULTDICT
 Позволяет задавать тот тип данных, который хранится в словаре по умолчанию. Бывает удобно в том случае, если приходится заполнять одну и ту же структуру данных, экземпляр которой должен храниться по каждому ключу в словаре.  
 
 `from collections import defaultdict`  
