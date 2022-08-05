@@ -1,3 +1,6 @@
+import collections
+
+
 def ord_dict_studing():
     data = [('Ivan', 19),('Mark', 25),('Andrey', 23),
             ('Maria', 20)
@@ -135,4 +138,29 @@ def task_3_2():
     print(ordered_temps_dict)
     
     
-task_3_2()
+# task_3_2()
+
+
+def task_4_3(brackets):
+    """Напишите функцию brackets(line), 
+    которая определяет, является ли 
+    последовательность из круглых скобок 
+    правильной.
+    """
+    
+    from collections import deque
+    brackets_dq = deque()
+    try:
+        for sym in brackets:
+            if sym == '(':
+                brackets_dq.append(sym)
+            elif sym == ')':
+                brackets_dq.pop()
+        if len(brackets_dq) == 0:
+            return True
+        else:
+            return False
+    except IndexError:
+        return False
+        
+# print(task_4_3('(()()))'))
