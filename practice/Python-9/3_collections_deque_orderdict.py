@@ -138,6 +138,7 @@ def task_3_2():
     print(ordered_temps_dict)
     
     
+<<<<<<< HEAD
 # task_3_2()
 
 
@@ -164,3 +165,6 @@ def task_4_3(brackets):
         return False
         
 # print(task_4_3('(()()))'))
+=======
+task_3_2()
+>>>>>>> 0fcdd822d11c6c977514c91fe69a6d62aacdb3a8
