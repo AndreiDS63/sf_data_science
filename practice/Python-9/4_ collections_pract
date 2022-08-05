@@ -1,0 +1,98 @@
+from numpy import append
+
+
+def task_4_3(brackets):
+    """Напишите функцию brackets(line), 
+    которая определяет, является ли 
+    последовательность из круглых скобок 
+    правильной.
+    """
+    
+    from collections import deque
+    brackets_dq = deque()
+    try:
+        for sym in brackets:
+            if sym == '(':
+                brackets_dq.append(sym)
+            elif sym == ')':
+                brackets_dq.pop()
+        if len(brackets_dq) == 0:
+            return True
+        else:
+            return False
+    except IndexError:
+        return False
+# print(task_4_3('(()()))'))
+
+
+def task_4_4():
+    some_lst = [['Milk', 'Bread'], ['Meat', ['egg', ['soup']]]]
+    from collections import Counter
+
+    from numpy import result_type
+
+    def repack_list(lst):
+        result_lst = []
+        for elem in lst:
+            if type(elem) is list:
+                result_lst.extend(elem)
+            elif type(elem) is str:
+                result_lst.append(elem)
+        for elem in result_lst:
+            if type(elem) is list:
+                return repack_list(result_lst)
+        
+        return result_lst
+    
+
+    print(repack_list(some_lst))
+# task_4_4()
+
+
+def task_4_9():
+    ratings = [('Old York', 3.3), ('New Age', 4.6), ('Old Gold', 3.3), ('General Foods', 4.8),
+            ('Belissimo', 4.5), ('CakeAndCoffee', 4.2), ('CakeOClock', 4.2), ('CakeTime', 4.1),
+            ('WokToWork', 4.9), ('WokAndRice', 4.9), ('Old Wine Cellar', 3.3), ('Nice Cakes', 3.9)]
+            
+    # Отсортируйте список ratings по убыванию рейтинга. Для кафе
+    # с одинаковым рейтингом отсортируйте кортежи по названию.
+
+
+    # Сохраните данные с рейтингом в словарь cafes, где ключами являются
+    # названия кафе, а значениями - их рейтинг.
+
+
+    ratings.sort(key=lambda x: x[0], reverse=False)
+    ratings.sort(key=lambda x: x[1], reverse=True)
+
+    from collections import OrderedDict
+    cafes = OrderedDict(ratings)
+
+
+
+    print(cafes)
+# print(task_4_9())
+
+
+def task_4_10():
+    tasks = [(36871, 'office', False),
+    (40690, 'office', False),
+    (35364, 'voltage', False),
+    (41667, 'voltage', True),
+    (33850, 'office', False)]
+
+    def task_manager(tasks):
+        from collections import defaultdict, deque
+
+        tasks_dict = defaultdict(deque)
+        
+        for task_num, serv, prior in tasks:
+            if prior == True:
+                tasks_dict[serv].appendleft(task_num)
+            else:
+                tasks_dict[serv].append(task_num)
+        
+        return tasks_dict
+
+    print(task_manager(tasks))
+# task_4_10()
