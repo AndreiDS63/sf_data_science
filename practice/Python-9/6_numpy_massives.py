@@ -1,4 +1,4 @@
-from multiprocessing.spawn import import_main_path
+import numpy as np
 
 
 def time_check():
@@ -13,7 +13,6 @@ def time_check():
     print(f'delta: {delta} sec')
     
 def arr_study():
-    import numpy as np
     arr = np.array([1, 5, 2, 9, 10])
     print(arr)
     print(type(arr))
@@ -25,14 +24,10 @@ def arr_study():
                 ])
     print(nd_arr)
     print(arr.dtype)
-
 # arr_study()
 
 
-
 def arr_prop_study_():
-    import numpy as np
-    
     arr = np.array([1, 5, 2, 9, 10], dtype=np.int16)
 
     nd_arr = np.array([
@@ -59,4 +54,36 @@ def arr_prop_study_():
     
     print(arr.dtype)
     print(nd_arr.dtype)
-arr_prop_study_()
+# arr_prop_study_()
+
+def new_arrs_study():
+    zeros_1d = np.zeros(5)
+    print(zeros_1d)
+
+    zeros_3d = np.zeros((5, 4, 3), dtype=np.float32)
+    print(zeros_3d.shape)
+
+    print(np.arange(5))
+
+    print(np.arange(2.5, 5))
+
+    print(np.arange(2.5, 5, 0.5))
+
+    print(np.arange(2.5, 5, 0.5, dtype=np.float16))
+
+    print(np.linspace(1, 2, 10))
+
+    print(np.linspace(1, 2, 10, endpoint=False))
+
+    arr, step = np.linspace(1, 2, 10, endpoint=True, retstep=True)
+    print(step)
+
+    arr, step = np.linspace(1, 2, 10, endpoint=False, retstep=True)
+    print(step)
+
+    arr, step = np.linspace(-6, 21, 60, endpoint=True, retstep=True)
+    print(round(step, 2))
+
+    arr, step = np.linspace(-6, 21, 60, endpoint=False, retstep=True)
+    print(round(step, 2))
+# new_arrs_study()
