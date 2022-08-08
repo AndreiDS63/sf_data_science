@@ -6,7 +6,10 @@
     + [Defaultdict](#defaultdict)
     + [Orderdict](#ordereddict)
     + [Deque](#deque)
-* [Модуль NumPy. Типы данных](#модуль-numpy-типы-данных)
+* [Модуль NumPy. Типы данных](#модуль-numpy-типы-данных)  
+    + [Целочисленные типы](#целочисленные-типы-данных-в-numpy)
+    + [С плавающей точкой](#типы-данных-с-плавающей-точкой-в-numpy)
+    + [Дополнительные типы](#дополнительные-типы-данных-в-numpy)
 
 
 ### Модуль Collections
@@ -104,3 +107,45 @@ deque - double-ended queue — двухконцевая очередь.
 
 
 ### Модуль NumPy. Типы данных
+Данная библиотека предназначена для точной и быстрой работы с числами.
+
+#### ЦЕЛОЧИСЛЕННЫЕ ТИПЫ ДАННЫХ В NUMPY
+
+[К модулю на SF](https://lms.skillfactory.ru/courses/course-v1:SkillFactory+DSPR-2.0+14JULY2021/courseware/adcad86c8b6c4e1299c49876a3024181/d8f26eeaa369488fba89d80455b6e101/2?activate_block_id=block-v1%3ASkillFactory%2BDSPR-2.0%2B14JULY2021%2Btype%40vertical%2Bblock%4089fd876ec7b241e697f390c7d06f8dde)
+
+* int8
+* int16
+* int32
+* int64
+
+* `np.iinfo()` - узнать границы int
+
+Беззнаковые целочисленные типы данных:  
+* uint (unsigned int — беззнаковое целое)
+
+
+#### ТИПЫ ДАННЫХ С ПЛАВАЮЩЕЙ ТОЧКОЙ В NUMPY
+Чтобы узнать границы:  
+
+* `np.finfo()` (float info)
+
+* np.float16
+* np.float32
+* np.float64
+* np.float128
+
+#### ДОПОЛНИТЕЛЬНЫЕ ТИПЫ ДАННЫХ В NUMPY
+
+Полный список (а точнее, словарь) типов данных - `print(np.sctypeDict)`
+
+Список уникальных типов данных -  
+`print(*sorted(map(str, set(np.sctypeDict.values()))), sep='\n')`
+
+
+:arrow_up:[К оглавлению](#оглавление)  
+
+
+### Модуль NumPy. Массивы
+
+
+:arrow_up:[К оглавлению](#оглавление) 
