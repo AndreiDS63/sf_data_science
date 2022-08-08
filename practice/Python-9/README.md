@@ -6,6 +6,7 @@
     + [Defaultdict](#defaultdict)
     + [Orderdict](#ordereddict)
     + [Deque](#deque)
+* [Модуль NumPy. Типы данных](#модуль-numpy-типы-данных)
 
 
 ### Модуль Collections
@@ -100,3 +101,6 @@ deque - double-ended queue — двухконцевая очередь.
 * `clear()` - позволяет очистить очередь
 
 :arrow_up:[К оглавлению](#оглавление)  
+
+
+### Модуль NumPy. Типы данных
