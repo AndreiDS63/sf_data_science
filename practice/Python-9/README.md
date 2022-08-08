@@ -1,5 +1,6 @@
 <div id="header" align="center">
-  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" width="100" title="Python" alt="Python" width="100" height="100"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" width="100" title="Python" alt="Python" width="100" height="100"/>;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/anaconda/anaconda-original-wordmark.svg" width="100" title="Conda" alt="Conda" width="100" height="100"/>
 </div>
 
 
