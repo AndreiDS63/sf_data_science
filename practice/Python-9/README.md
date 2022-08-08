@@ -163,7 +163,8 @@ deque - double-ended queue — двухконцевая очередь.
 
 #### МАССИВЫ В NUMPY
 
-```import numpy as np  
+```
+import numpy as np  
 arr = np.array([1,5,2,9,10])
 ```
  
@@ -172,7 +173,7 @@ arr = np.array([1,5,2,9,10])
 `arr.dtype`
 
 * задать тип данных при создании массива:  
-arr = np.array([1,5,2,9,10], dtype=np.int8)`
+`arr = np.array([1,5,2,9,10], dtype=np.int8)`
 
 
 ##### СВОЙСТВА NUMPY-МАССИВОВ
