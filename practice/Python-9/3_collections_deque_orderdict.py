@@ -138,33 +138,6 @@ def task_3_2():
     print(ordered_temps_dict)
     
     
-<<<<<<< HEAD
 # task_3_2()
 
 
-def task_4_3(brackets):
-    """Напишите функцию brackets(line), 
-    которая определяет, является ли 
-    последовательность из круглых скобок 
-    правильной.
-    """
-    
-    from collections import deque
-    brackets_dq = deque()
-    try:
-        for sym in brackets:
-            if sym == '(':
-                brackets_dq.append(sym)
-            elif sym == ')':
-                brackets_dq.pop()
-        if len(brackets_dq) == 0:
-            return True
-        else:
-            return False
-    except IndexError:
-        return False
-        
-# print(task_4_3('(()()))'))
-=======
-task_3_2()
->>>>>>> 0fcdd822d11c6c977514c91fe69a6d62aacdb3a8
