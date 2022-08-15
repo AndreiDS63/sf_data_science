@@ -99,3 +99,6 @@ def seed_gen():
     print(np.random.randint(10, size=3))
     print()
 # seed_gen()
+
+
+print(np.iinfo(np.int16))
