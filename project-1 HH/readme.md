@@ -5,7 +5,7 @@
 
 *Проблематика*: часть соискателей не указывает желаемую заработную плату, когда составляет своё резюме.
 
-* сслыка на датасет: https://drive.google.com/file/d/1Kb78mAWYKcYlellTGhIjPI-bCcKbGuTn/view
+* [сслыка на датасет](https://drive.google.com/file/d/1Kb78mAWYKcYlellTGhIjPI-bCcKbGuTn/view)
 
 **Орг информация**
 Проект состоит из 4 частей  
