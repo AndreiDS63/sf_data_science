@@ -1,4 +1,4 @@
-# My data science project
+# My data science projects
 From the [Skillfactory Data Science course](https://skillfacrory.ru/data-scientist)
 
 ## Projects
